@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ad-sil-safety"
+version = "0.1.0"
+description = "ISO 26262, ISO 21448 (SOTIF), and GB/T compliance documentation framework for ADAS/AD systems"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "pyyaml>=5.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov>=4.0"]
+all = ["ad-sil-safety[dev]"]
+
+[project.urls]
+Homepage = "https://github.com/Arswill/ad-sil-safety"
+Repository = "https://github.com/Arswill/ad-sil-safety.git"
+
+[tool.setuptools.packages.find]
+include = ["ad_sil_safety*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"

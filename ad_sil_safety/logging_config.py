@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Unified logging configuration for AD_SIL.
+"""Unified logging configuration for ad-sil-safety.
 
 Provides a single setup function that configures both console and file
-logging with rotation. All AD_SIL modules should use this instead of
+logging with rotation. All modules in this package should use this instead of
 bare print() statements.
 
 Usage:
-    from ad_sil.util.logging_config import setup_logging, get_logger
+    from ad_sil_safety.logging_config import setup_logging, get_logger
 
     setup_logging(level="INFO", log_dir="data/logs")
     logger = get_logger(__name__)
@@ -31,12 +31,12 @@ _initialized = False
 
 def setup_logging(
     level: str = "INFO",
-    log_dir: str = "data/logs",
+    log_dir: str = "logs",
     max_bytes: int = 10 * 1024 * 1024,
     backup_count: int = 5,
     console: bool = True,
 ) -> Optional[Path]:
-    """Setup unified logging for AD_SIL.
+    """Setup unified logging for ad-sil-safety.
 
     Configures the root logger with both console and rotating file handlers.
     Safe to call multiple times — subsequent calls are no-ops unless force=True.
@@ -76,7 +76,7 @@ def setup_logging(
     log_file = None
     if log_path:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        log_file = log_path / f"ad_sil_{timestamp}.log"
+        log_file = log_path / f"compliance_{timestamp}.log"
         try:
             file_handler = RotatingFileHandler(
                 log_file,

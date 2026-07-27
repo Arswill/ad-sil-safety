@@ -1,8 +1,4 @@
-__pycache__/
-*.pyc
 *.egg-info/
-dist/
-build/
+__pycache__/
+.TEST_PASSED
 .pytest_cache/
-.coverage
-*.egg

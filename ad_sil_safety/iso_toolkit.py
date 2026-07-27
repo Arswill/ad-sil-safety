@@ -134,11 +134,11 @@ class ISOToolkit:
         items = [CheckItem(id=i.id, clause=i.clause, requirement=i.requirement) for i in _ISO_26262_TCL1_ITEMS]
 
         auto_assessments = {
-            "TCL1-01": ("compliant", "AD_SIL is a simulation test tool, not a code generator"),
-            "TCL1-02": ("compliant", "AD_SIL does not modify safety-related code or data"),
-            "TCL1-03": ("partial", "AD_SIL results may be used as supplementary evidence"),
+            "TCL1-01": ("compliant", "This framework is a simulation test tool, not a code generator"),
+            "TCL1-02": ("compliant", "This framework does not modify safety-related code or data"),
+            "TCL1-03": ("partial", "This framework's results may be used as supplementary evidence"),
             "TCL1-04": ("compliant", "Tool errors in simulation do not directly cause safety violations"),
-            "TCL1-05": ("partial", "Test suite with 1200+ tests provides validation evidence"),
+            "TCL1-05": ("partial", "Test suite provides validation evidence"),
             "TCL1-06": ("compliant", "Git-based configuration management is established"),
             "TCL1-07": ("compliant", "Version 0.9.0 with semantic versioning"),
             "TCL1-08": ("partial", "README and API docs exist, user guide incomplete"),
@@ -159,7 +159,7 @@ class ISOToolkit:
 
         auto_assessments = {
             "SOTIF-01": ("compliant", "ODD class with 7 dimensions implemented"),
-            "SOTIF-02": ("compliant", "49 protocol scenarios + 19 UN R157 scenarios"),
+            "SOTIF-02": ("compliant", "Protocol and regulatory scenarios defined in the scenario registry"),
             "SOTIF-03": ("compliant", "SOTIFModule.identify_unknown_unsafe() implemented"),
             "SOTIF-04": ("partial", "CoverageFuzzer with 9720 bins, not yet fully explored"),
             "SOTIF-05": ("partial", "Triggering conditions partially covered in scenarios"),

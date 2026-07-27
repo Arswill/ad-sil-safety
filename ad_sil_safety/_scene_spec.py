@@ -1,6 +1,6 @@
 """Minimal scene specification for SOTIF ODD containment checks.
 
-Replacement for the full ad_sil.scenario.schema.SceneSpec — contains
+Subset of scene specification fields for ODD containment checks — contains
 only the fields accessed by ODD.contains() in sotif_core.
 """
 

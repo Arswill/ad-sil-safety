@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """SOTIF (ISO 21448) compliance core — ODD, coverage, safety case dataclasses and helpers.
 
-Extracted from AD_SIL's sotif_module.py. Implements Operational Design Domain
-(ODD) definition, scenario coverage assessment, safety case generation,
+Operational Design Domain definitions and SOTIF compliance evaluation,
+scenario coverage assessment, safety case generation,
 unknown-unsafe identification, and residual risk computation.
 """
 

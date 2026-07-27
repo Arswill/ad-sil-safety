@@ -6,7 +6,7 @@
 
 **ISO 26262, ISO 21448 (SOTIF), and GB/T compliance documentation framework for ADAS/AD systems.**
 
-Extracted from the [AD_SIL](https://github.com/Arswill/AD_SIL) simulation platform, this standalone package provides tool qualification checklists, Operational Design Domain (ODD) definition, scenario coverage assessment, safety case generation, and residual risk computation — without importing the full CARLA/Autoware stack.
+A standalone package providing tool qualification checklists, Operational Design Domain (ODD) definition, scenario coverage assessment, safety case generation, and residual risk computation — without importing a full simulation stack.
 
 ---
 
@@ -58,7 +58,7 @@ print(f"Compliance rate: {report.compliance_rate:.1%}")
 
 ## 中文说明
 
-**ad-sil-safety** 是从 AD_SIL 仿真平台中剥离出来的 ISO 26262 / ISO 21448 (SOTIF) / GB/T 合规框架，提供独立的功能安全工具鉴定、运行设计域 (ODD) 定义、场景覆盖评估、安全案例生成和残余风险计算功能，无需导入完整的 CARLA/Autoware 软件栈。
+**ad-sil-safety** 是一个独立的 ISO 26262 / ISO 21448 (SOTIF) / GB/T 合规框架，提供功能安全工具鉴定、运行设计域 (ODD) 定义、场景覆盖评估、安全案例生成和残余风险计算功能，无需导入完整的仿真软件栈。
 
 ### 支持的合规标准
 
